@@ -1,5 +1,5 @@
 let count = 0
-function dynamicFibonacci() {
+function dynamicFibonacco() {
     interface NumberArray {
         [index: number]: number
     }
@@ -12,11 +12,11 @@ function dynamicFibonacci() {
         if (n < 2)
             return n
         cache[n] = fibonacci(n - 1) + fibonacci(n - 2)
-        return cache[n] 
+        return cache[n]
     }
 }
 
 let target = 3
-const memoizedFibo = dynamicFibonacci()
+const memoizedFibo = dynamicFibonacco()
 let value = memoizedFibo(target)
 console.log(`memoizedFibo(${target}) = ${value} , count: ${count}`)
